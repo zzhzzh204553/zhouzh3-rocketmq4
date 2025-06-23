@@ -6,10 +6,7 @@ spring:
 rocketmq:
     name-server: 0.0.0.0:9876
     producer:
-        group: rocketmq4-producer
+        group: order_tx_group
         send-message-timeout: 3000
-    consumer:
-        group: rocketmq4-consumer
-        pull-batch-size: 10
     client:
         log-use-slf4j: true
